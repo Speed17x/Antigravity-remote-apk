@@ -1,0 +1,21 @@
+{
+  "name": "antigravity-remote-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Remote Client for Google Antigravity",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "antigravity",
+    "remote",
+    "electron"
+  ],
+  "author": "Antigravity User",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  }
+}

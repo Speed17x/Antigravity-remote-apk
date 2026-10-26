@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Attempt to find and run gradle
+DIRNAME=$(dirname "$0")
+APP_HOME=$(cd "$DIRNAME" && pwd)
+
+if command -v gradle >/dev/null 2>&1; then
+    exec gradle "$@"
+fi
+
+if [ -f "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" ]; then
+    JAVA_CMD="java"
+    if [ -n "$JAVA_HOME" ] ; then
+        JAVA_CMD="$JAVA_HOME/bin/java"
+    fi
+    exec "$JAVA_CMD" -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" "$@"
+else
+    echo "Para compilar el APK:"
+    echo "1. Abre la carpeta 'android-app' en Android Studio."
+    echo "2. O instala gradle/Android SDK y corre: gradle assembleDebug"
+fi

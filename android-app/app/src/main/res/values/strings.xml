@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Antigravity Remote</string>
+    <string name="title_activity_main">Antigravity Remote</string>
+    <string name="action_set_url">Configurar URL</string>
+    <string name="dialog_url_title">URL del Dispositivo</string>
+    <string name="dialog_url_message">Ingresa el enlace copiado desde Antigravity Remote Control (copy link):</string>
+    <string name="dialog_url_hint">https://...</string>
+    <string name="btn_save">Guardar y Conectar</string>
+    <string name="btn_cancel">Cancelar</string>
+</resources>
